@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "players",
+  "info": {
+    "name": "Player",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "city": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Founder",
+        "Mentor",
+        "Host",
+        "Unicorn",
+        "Serial",
+        "Player"
+      ]
+    },
+    "biography": {
+      "type": "richtext"
+    },
+    "contacts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.social-network"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

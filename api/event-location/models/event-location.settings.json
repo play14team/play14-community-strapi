@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_locations",
+  "info": {
+    "name": "EventLocation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "events": {
+      "via": "location",
+      "collection": "event"
+    }
+  }
+}
