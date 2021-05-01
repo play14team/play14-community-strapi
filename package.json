@@ -12,19 +12,21 @@
   "devDependencies": {},
   "dependencies": {
     "slugify": "^1.4.6",
-    "strapi": "3.4.0",
-    "strapi-admin": "3.4.0",
-    "strapi-connector-mongoose": "3.4.0",
-    "strapi-plugin-content-manager": "3.4.0",
-    "strapi-plugin-content-type-builder": "3.4.0",
-    "strapi-plugin-email": "3.4.0",
-    "strapi-plugin-graphql": "3.4.0",
-    "strapi-plugin-upload": "3.4.0",
-    "strapi-plugin-users-permissions": "3.4.0",
-    "strapi-utils": "3.4.0"
+    "strapi": "3.6.0",
+    "strapi-admin": "3.6.0",
+    "strapi-connector-mongoose": "3.6.0",
+    "strapi-plugin-content-manager": "3.6.0",
+    "strapi-plugin-content-type-builder": "3.6.0",
+    "strapi-plugin-documentation": "3.6.0",
+    "strapi-plugin-email": "3.6.0",
+    "strapi-plugin-grexiaphql": "3.6.0",
+    "strapi-plugin-i18n": "3.6.0",
+    "strapi-plugin-upload": "3.6.0",
+    "strapi-plugin-users-permissions": "3.6.0",
+    "strapi-utils": "3.6.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Cédric Pontet @ #play14"
   },
   "strapi": {
     "uuid": "cf253892-7b30-4fa7-93f9-d00821ffa6bb"
