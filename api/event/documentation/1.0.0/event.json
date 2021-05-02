@@ -563,7 +563,7 @@
               "embeddedMapUrl": {
                 "type": "string"
               },
-              "pictures": {
+              "images": {
                 "type": "array",
                 "items": {
                   "type": "string"

@@ -558,7 +558,7 @@
           "embeddedMapUrl": {
             "type": "string"
           },
-          "pictures": {
+          "images": {
             "type": "array",
             "items": {
               "required": [

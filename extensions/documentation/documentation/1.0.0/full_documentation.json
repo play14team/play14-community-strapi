@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/02/2021 7:10:34 PM"
+    "x-generation-date": "05/02/2021 8:09:49 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5812,7 +5812,7 @@
           "email": {
             "type": "string"
           },
-          "contacts": {
+          "socialnetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5823,10 +5823,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -5854,7 +5854,7 @@
           "email": {
             "type": "string"
           },
-          "contacts": {
+          "socialnetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5865,10 +5865,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -6058,7 +6058,7 @@
               "embeddedMapUrl": {
                 "type": "string"
               },
-              "pictures": {
+              "images": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -6349,7 +6349,7 @@
           "embeddedMapUrl": {
             "type": "string"
           },
-          "pictures": {
+          "images": {
             "type": "array",
             "items": {
               "required": [
@@ -6740,10 +6740,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -6808,10 +6808,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -6933,10 +6933,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -7049,10 +7049,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",

@@ -24,7 +24,7 @@
     "embeddedMapUrl": {
       "type": "string"
     },
-    "pictures": {
+    "images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [

@@ -607,10 +607,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -723,10 +723,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",

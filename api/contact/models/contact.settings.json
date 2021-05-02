@@ -17,7 +17,7 @@
     "email": {
       "type": "email"
     },
-    "contacts": {
+    "socialnetworks": {
       "type": "component",
       "repeatable": true,
       "component": "contact.social-network"

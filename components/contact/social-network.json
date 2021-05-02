@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "Url": {
+    "url": {
       "type": "string"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Twitter",

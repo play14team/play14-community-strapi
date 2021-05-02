@@ -324,7 +324,7 @@
           "email": {
             "type": "string"
           },
-          "contacts": {
+          "socialnetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -335,10 +335,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
@@ -366,7 +366,7 @@
           "email": {
             "type": "string"
           },
-          "contacts": {
+          "socialnetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -377,10 +377,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Url": {
+                "url": {
                   "type": "string"
                 },
-                "Type": {
+                "type": {
                   "type": "string",
                   "enum": [
                     "Twitter",
