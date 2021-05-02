@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/02/2021 9:50:43 AM"
+    "x-generation-date": "05/02/2021 2:58:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5855,7 +5855,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "images"
               ],
               "properties": {
                 "id": {
@@ -5891,7 +5892,7 @@
                     "type": "string"
                   }
                 },
-                "pictures": {
+                "images": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -5944,7 +5945,8 @@
       "Event": {
         "required": [
           "id",
-          "name"
+          "name",
+          "images"
         ],
         "properties": {
           "id": {
@@ -6084,7 +6086,7 @@
               }
             }
           },
-          "pictures": {
+          "images": {
             "type": "array",
             "items": {
               "required": [
@@ -6395,7 +6397,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "images"
               ],
               "properties": {
                 "id": {
@@ -6431,7 +6434,7 @@
                     "type": "string"
                   }
                 },
-                "pictures": {
+                "images": {
                   "type": "array",
                   "items": {
                     "type": "string"
@@ -6835,7 +6838,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "images"
               ],
               "properties": {
                 "id": {
@@ -6871,7 +6875,7 @@
                     "type": "string"
                   }
                 },
-                "pictures": {
+                "images": {
                   "type": "array",
                   "items": {
                     "type": "string"

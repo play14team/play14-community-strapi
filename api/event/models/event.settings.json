@@ -44,14 +44,14 @@
       "via": "events",
       "dominant": true
     },
-    "pictures": {
+    "images": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     }
   }

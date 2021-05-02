@@ -700,7 +700,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "images"
               ],
               "properties": {
                 "id": {
@@ -736,7 +737,7 @@
                     "type": "string"
                   }
                 },
-                "pictures": {
+                "images": {
                   "type": "array",
                   "items": {
                     "type": "string"

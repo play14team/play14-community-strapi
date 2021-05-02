@@ -10128,6 +10128,11 @@ strapi-plugin-i18n@3.6.0:
     pluralize "8.0.0"
     strapi-utils "3.6.0"
 
+strapi-plugin-mongodb-files@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-mongodb-files/-/strapi-plugin-mongodb-files-3.1.2.tgz#c3b80125d2213d62fc60753ee2cdbce23d7f1c10"
+  integrity sha512-iv//ZLfymUcazP3SYIsc5mWBEXyWektQBaCTBDAmEz3WwVs4lxuyRsPKmko1LuuV+b1al5bd05ttWgXTzMNGeA==
+
 strapi-plugin-upload@3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/strapi-plugin-upload/-/strapi-plugin-upload-3.6.0.tgz#ba8d57424b219d2a31770ed09fb524ef2e746eee"
@@ -10207,6 +10212,11 @@ strapi-provider-upload-local@3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.0.tgz#508cbce4039e8912b09b5116a4983da559a9f09f"
   integrity sha512-YLmdrGBWYHu33xq13tEgcx6i+lnqo5Qra15kX+OtbivhKXMMEBBQLk2Nh2oLy3tr+z3zSFWu6NQOljsVTNn/HQ==
+
+strapi-provider-upload-mongodb@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-mongodb/-/strapi-provider-upload-mongodb-3.1.1.tgz#4cebe757129e990dc0a65a543b1019156f75ed1a"
+  integrity sha512-HkXx/mhW3hkiUwNFrqZ8mjQdjk0M9eKMP79r6ORGg7kxejdopk/2/lU1JrEOcPlJRnHzMlKBykBhQm0BOZb8pg==
 
 strapi-utils@3.6.0:
   version "3.6.0"

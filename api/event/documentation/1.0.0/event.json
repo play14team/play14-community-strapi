@@ -517,7 +517,8 @@
       "Event": {
         "required": [
           "id",
-          "name"
+          "name",
+          "images"
         ],
         "properties": {
           "id": {
@@ -657,7 +658,7 @@
               }
             }
           },
-          "pictures": {
+          "images": {
             "type": "array",
             "items": {
               "required": [
