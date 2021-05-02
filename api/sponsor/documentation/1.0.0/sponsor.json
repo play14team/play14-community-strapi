@@ -663,7 +663,7 @@
                     "type": "string"
                   }
                 },
-                "Pictures": {
+                "pictures": {
                   "type": "array",
                   "items": {
                     "type": "string"

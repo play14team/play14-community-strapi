@@ -44,7 +44,7 @@
       "via": "events",
       "dominant": true
     },
-    "Pictures": {
+    "pictures": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [

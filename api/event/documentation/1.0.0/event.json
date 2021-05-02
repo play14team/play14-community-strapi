@@ -657,7 +657,7 @@
               }
             }
           },
-          "Pictures": {
+          "pictures": {
             "type": "array",
             "items": {
               "required": [
