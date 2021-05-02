@@ -17,10 +17,30 @@
     "email": {
       "type": "email"
     },
-    "socialnetworks": {
+    "socialNetworks": {
       "type": "component",
       "repeatable": true,
       "component": "contact.social-network"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.address"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "registerTonNewsletter": {
+      "type": "string"
+    },
+    "joinSlack": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
     }
   }
 }

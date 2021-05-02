@@ -596,7 +596,7 @@
               }
             }
           },
-          "contacts": {
+          "socialNetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -712,7 +712,7 @@
           "url": {
             "type": "string"
           },
-          "contacts": {
+          "socialNetworks": {
             "type": "array",
             "items": {
               "type": "object",

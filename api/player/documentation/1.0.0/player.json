@@ -616,7 +616,7 @@
           "biography": {
             "type": "string"
           },
-          "contacts": {
+          "socialNetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -684,7 +684,7 @@
           "biography": {
             "type": "string"
           },
-          "contacts": {
+          "socialNetworks": {
             "type": "array",
             "items": {
               "type": "object",

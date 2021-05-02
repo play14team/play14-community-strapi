@@ -324,7 +324,7 @@
           "email": {
             "type": "string"
           },
-          "socialnetworks": {
+          "socialNetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -351,6 +351,50 @@
                 }
               }
             }
+          },
+          "address": {
+            "type": "object",
+            "required": [
+              "id",
+              "street",
+              "city",
+              "country"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "number": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              }
+            }
+          },
+          "tagline": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "registerTonNewsletter": {
+            "type": "string"
+          },
+          "joinSlack": {
+            "type": "string"
+          },
+          "shortDescription": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -366,7 +410,7 @@
           "email": {
             "type": "string"
           },
-          "socialnetworks": {
+          "socialNetworks": {
             "type": "array",
             "items": {
               "type": "object",
@@ -393,6 +437,50 @@
                 }
               }
             }
+          },
+          "address": {
+            "type": "object",
+            "required": [
+              "id",
+              "street",
+              "city",
+              "country"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "number": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              }
+            }
+          },
+          "tagline": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "registerTonNewsletter": {
+            "type": "string"
+          },
+          "joinSlack": {
+            "type": "string"
+          },
+          "shortDescription": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

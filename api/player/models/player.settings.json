@@ -31,7 +31,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "city": {
       "type": "string"
@@ -50,7 +51,7 @@
     "biography": {
       "type": "richtext"
     },
-    "contacts": {
+    "socialNetworks": {
       "type": "component",
       "repeatable": true,
       "component": "contact.social-network"

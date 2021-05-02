@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/locations",
-      "handler": "location.find",
+      "path": "/venues",
+      "handler": "venue.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/locations/count",
-      "handler": "location.count",
+      "path": "/venues/count",
+      "handler": "venue.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/locations/:id",
-      "handler": "location.findOne",
+      "path": "/venues/:id",
+      "handler": "venue.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/locations",
-      "handler": "location.create",
+      "path": "/venues",
+      "handler": "venue.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/locations/:id",
-      "handler": "location.update",
+      "path": "/venues/:id",
+      "handler": "venue.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/locations/:id",
-      "handler": "location.delete",
+      "path": "/venues/:id",
+      "handler": "venue.delete",
       "config": {
         "policies": []
       }

@@ -581,6 +581,9 @@
               "website": {
                 "type": "string"
               },
+              "socialNetworks": {
+                "type": "component"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -641,7 +644,7 @@
                 "logo": {
                   "type": "string"
                 },
-                "contacts": {
+                "socialNetworks": {
                   "type": "component"
                 },
                 "events": {

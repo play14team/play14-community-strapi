@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/locations": {
+    "/venues": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Location"
+                    "$ref": "#/components/schemas/Venue"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Location"
+          "Venue"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Location"
+                  "$ref": "#/components/schemas/Venue"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Location"
+          "Venue"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLocation"
+                "$ref": "#/components/schemas/NewVenue"
               }
             }
           }
         }
       }
     },
-    "/locations/count": {
+    "/venues/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Location"
+          "Venue"
         ],
         "parameters": []
       }
     },
-    "/locations/{id}": {
+    "/venues/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Location"
+                  "$ref": "#/components/schemas/Venue"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Location"
+          "Venue"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Location"
+                  "$ref": "#/components/schemas/Venue"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Location"
+          "Venue"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewLocation"
+                "$ref": "#/components/schemas/NewVenue"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Location"
+          "Venue"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Location": {
+      "Venue": {
         "required": [
           "id",
           "name"
@@ -769,13 +769,41 @@
           "website": {
             "type": "string"
           },
+          "socialNetworks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Twitter",
+                    "LinkedIn",
+                    "Facebook",
+                    "Youtube",
+                    "Instagram",
+                    "Other"
+                  ]
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewLocation": {
+      "NewVenue": {
         "required": [
           "name"
         ],
@@ -824,6 +852,34 @@
           "website": {
             "type": "string"
           },
+          "socialNetworks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "Twitter",
+                    "LinkedIn",
+                    "Facebook",
+                    "Youtube",
+                    "Instagram",
+                    "Other"
+                  ]
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -840,7 +896,7 @@
   },
   "tags": [
     {
-      "name": "Location"
+      "name": "Venue"
     }
   ]
 }

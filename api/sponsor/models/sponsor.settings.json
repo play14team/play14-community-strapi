@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "sponsors",
   "info": {
-    "name": "Sponsor"
+    "name": "Sponsor",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,9 +28,10 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
-    "contacts": {
+    "socialNetworks": {
       "type": "component",
       "repeatable": true,
       "component": "contact.social-network"

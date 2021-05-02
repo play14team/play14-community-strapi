@@ -33,7 +33,7 @@
     },
     "venue": {
       "via": "events",
-      "model": "location"
+      "model": "venue"
     },
     "location": {
       "model": "event-location",
