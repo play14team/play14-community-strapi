@@ -518,7 +518,8 @@
         "required": [
           "id",
           "name",
-          "images"
+          "images",
+          "status"
         ],
         "properties": {
           "id": {
@@ -576,6 +577,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "website": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -728,6 +732,17 @@
               }
             }
           },
+          "status": {
+            "type": "string",
+            "default": "Draft",
+            "enum": [
+              "Draft",
+              "Published",
+              "OpenForRegistration",
+              "Over",
+              "Canceled"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -736,7 +751,8 @@
       },
       "NewEvent": {
         "required": [
-          "name"
+          "name",
+          "status"
         ],
         "properties": {
           "name": {
@@ -770,6 +786,17 @@
             "items": {
               "type": "string"
             }
+          },
+          "status": {
+            "type": "string",
+            "default": "Draft",
+            "enum": [
+              "Draft",
+              "Published",
+              "OpenForRegistration",
+              "Over",
+              "Canceled"
+            ]
           },
           "published_at": {
             "type": "string",

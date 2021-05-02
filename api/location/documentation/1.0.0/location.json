@@ -701,7 +701,8 @@
               "required": [
                 "id",
                 "name",
-                "images"
+                "images",
+                "status"
               ],
               "properties": {
                 "id": {
@@ -743,6 +744,16 @@
                     "type": "string"
                   }
                 },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Draft",
+                    "Published",
+                    "OpenForRegistration",
+                    "Over",
+                    "Canceled"
+                  ]
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -754,6 +765,9 @@
                 }
               }
             }
+          },
+          "website": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -806,6 +820,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "website": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

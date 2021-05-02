@@ -33,7 +33,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "logo": {
       "model": "file",
@@ -44,11 +45,15 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "events": {
-      "via": "venue",
-      "collection": "event"
+      "collection": "event",
+      "via": "venue"
+    },
+    "website": {
+      "type": "string"
     }
   }
 }

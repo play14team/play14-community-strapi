@@ -324,6 +324,34 @@
           "email": {
             "type": "string"
           },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Url": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "Twitter",
+                    "LinkedIn",
+                    "Facebook",
+                    "Youtube",
+                    "Instagram",
+                    "Other"
+                  ]
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -337,6 +365,34 @@
           },
           "email": {
             "type": "string"
+          },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Url": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "Twitter",
+                    "LinkedIn",
+                    "Facebook",
+                    "Youtube",
+                    "Instagram",
+                    "Other"
+                  ]
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

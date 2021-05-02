@@ -32,8 +32,8 @@
       "type": "richtext"
     },
     "venue": {
-      "model": "location",
-      "via": "events"
+      "via": "events",
+      "model": "location"
     },
     "location": {
       "model": "event-location",
@@ -53,6 +53,18 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Published",
+        "OpenForRegistration",
+        "Over",
+        "Canceled"
+      ],
+      "default": "Draft",
+      "required": true
     }
   }
 }

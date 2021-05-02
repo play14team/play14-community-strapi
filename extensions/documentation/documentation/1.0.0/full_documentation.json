@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/02/2021 2:58:11 PM"
+    "x-generation-date": "05/02/2021 7:10:34 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5812,6 +5812,34 @@
           "email": {
             "type": "string"
           },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Url": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "Twitter",
+                    "LinkedIn",
+                    "Facebook",
+                    "Youtube",
+                    "Instagram",
+                    "Other"
+                  ]
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5825,6 +5853,34 @@
           },
           "email": {
             "type": "string"
+          },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Url": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string",
+                  "enum": [
+                    "Twitter",
+                    "LinkedIn",
+                    "Facebook",
+                    "Youtube",
+                    "Instagram",
+                    "Other"
+                  ]
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -5856,7 +5912,8 @@
               "required": [
                 "id",
                 "name",
-                "images"
+                "images",
+                "status"
               ],
               "properties": {
                 "id": {
@@ -5897,6 +5954,16 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Draft",
+                    "Published",
+                    "OpenForRegistration",
+                    "Over",
+                    "Canceled"
+                  ]
                 },
                 "published_at": {
                   "type": "string"
@@ -5946,7 +6013,8 @@
         "required": [
           "id",
           "name",
-          "images"
+          "images",
+          "status"
         ],
         "properties": {
           "id": {
@@ -6004,6 +6072,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "website": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"
@@ -6156,6 +6227,17 @@
               }
             }
           },
+          "status": {
+            "type": "string",
+            "default": "Draft",
+            "enum": [
+              "Draft",
+              "Published",
+              "OpenForRegistration",
+              "Over",
+              "Canceled"
+            ]
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6164,7 +6246,8 @@
       },
       "NewEvent": {
         "required": [
-          "name"
+          "name",
+          "status"
         ],
         "properties": {
           "name": {
@@ -6198,6 +6281,17 @@
             "items": {
               "type": "string"
             }
+          },
+          "status": {
+            "type": "string",
+            "default": "Draft",
+            "enum": [
+              "Draft",
+              "Published",
+              "OpenForRegistration",
+              "Over",
+              "Canceled"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -6398,7 +6492,8 @@
               "required": [
                 "id",
                 "name",
-                "images"
+                "images",
+                "status"
               ],
               "properties": {
                 "id": {
@@ -6440,6 +6535,16 @@
                     "type": "string"
                   }
                 },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Draft",
+                    "Published",
+                    "OpenForRegistration",
+                    "Over",
+                    "Canceled"
+                  ]
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -6451,6 +6556,9 @@
                 }
               }
             }
+          },
+          "website": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6503,6 +6611,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "website": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -6638,6 +6749,8 @@
                     "Twitter",
                     "LinkedIn",
                     "Facebook",
+                    "Youtube",
+                    "Instagram",
                     "Other"
                   ]
                 }
@@ -6704,6 +6817,8 @@
                     "Twitter",
                     "LinkedIn",
                     "Facebook",
+                    "Youtube",
+                    "Instagram",
                     "Other"
                   ]
                 }
@@ -6827,6 +6942,8 @@
                     "Twitter",
                     "LinkedIn",
                     "Facebook",
+                    "Youtube",
+                    "Instagram",
                     "Other"
                   ]
                 }
@@ -6839,7 +6956,8 @@
               "required": [
                 "id",
                 "name",
-                "images"
+                "images",
+                "status"
               ],
               "properties": {
                 "id": {
@@ -6880,6 +6998,16 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Draft",
+                    "Published",
+                    "OpenForRegistration",
+                    "Over",
+                    "Canceled"
+                  ]
                 },
                 "published_at": {
                   "type": "string"
@@ -6930,6 +7058,8 @@
                     "Twitter",
                     "LinkedIn",
                     "Facebook",
+                    "Youtube",
+                    "Instagram",
                     "Other"
                   ]
                 }

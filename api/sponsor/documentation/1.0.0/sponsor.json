@@ -616,6 +616,8 @@
                     "Twitter",
                     "LinkedIn",
                     "Facebook",
+                    "Youtube",
+                    "Instagram",
                     "Other"
                   ]
                 }
@@ -628,7 +630,8 @@
               "required": [
                 "id",
                 "name",
-                "images"
+                "images",
+                "status"
               ],
               "properties": {
                 "id": {
@@ -669,6 +672,16 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Draft",
+                    "Published",
+                    "OpenForRegistration",
+                    "Over",
+                    "Canceled"
+                  ]
                 },
                 "published_at": {
                   "type": "string"
@@ -719,6 +732,8 @@
                     "Twitter",
                     "LinkedIn",
                     "Facebook",
+                    "Youtube",
+                    "Instagram",
                     "Other"
                   ]
                 }
