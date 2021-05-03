@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "games",
+  "info": {
+    "name": "Game",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "categories": {
+      "collection": "game-category",
+      "via": "games",
+      "dominant": true
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "proposedby": {
+      "collection": "player"
+    },
+    "writtenby": {
+      "collection": "player"
+    },
+    "publishdate": {
+      "type": "date"
+    },
+    "timebox": {
+      "type": "string"
+    },
+    "scale": {
+      "type": "string"
+    },
+    "firstplayed": {
+      "model": "event"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "values": {
+      "type": "richtext"
+    },
+    "materials": {
+      "type": "richtext"
+    },
+    "preparations": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}
