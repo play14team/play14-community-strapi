@@ -17,17 +17,29 @@ jobs:
     - name: 'Checkout Github Action'
       uses: actions/checkout@master
 
-
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
         node-version: '14.x'
 
-    - name: npm install, build, and test
-      run: |
-        npm install
-        npm run build --if-present
-        npm run test --if-present
+    - name: Yarn install
+      uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: install
+
+    - name: Yarn build
+      uses: borales/actions-yarn@v2.0.0
+      with:
+        cmd: build
+
+    - name: Create .env file
+      uses: SpicyPizza/create-envfile@v1.1
+      with:
+        envkey_JWT_SECRET: ${{ secrets.ENVKEY_JWT_SECRET }}
+        envkey_DATABASE_HOST: ${{ secrets.ENVKEY_DATABASE_HOST }}
+        envkey_DATABASE_NAME: ${{ secrets.ENVKEY_DATABASE_NAME }}
+        envkey_DATABASE_USERNAME: ${{ secrets.ENVKEY_DATABASE_USERNAME }}
+        envkey_DATABASE_PASSWORD: ${{ secrets.ENVKEY_DATABASE_PASSWORD }}
 
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
