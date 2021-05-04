@@ -22,15 +22,8 @@ jobs:
       with:
         node-version: '14.x'
 
-    - name: Yarn install
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: install
-
-    - name: Yarn build
-      uses: borales/actions-yarn@v2.0.0
-      with:
-        cmd: build
+    - name: Install build dependencies
+        sudo apt-get update -y
 
     - name: Create .env file
       uses: SpicyPizza/create-envfile@v1.1
@@ -40,6 +33,12 @@ jobs:
         envkey_DATABASE_NAME: ${{ secrets.ENVKEY_DATABASE_NAME }}
         envkey_DATABASE_USERNAME: ${{ secrets.ENVKEY_DATABASE_USERNAME }}
         envkey_DATABASE_PASSWORD: ${{ secrets.ENVKEY_DATABASE_PASSWORD }}
+
+    - name: npm install, build, and test
+      run: |
+        npm install
+        npm run build --if-present
+        npm run test --if-present
 
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
