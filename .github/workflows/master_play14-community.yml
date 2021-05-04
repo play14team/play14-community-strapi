@@ -22,9 +22,6 @@ jobs:
       with:
         node-version: '14.x'
 
-    - name: Install build dependencies
-        sudo apt-get update -y
-
     - name: Create .env file
       uses: SpicyPizza/create-envfile@v1.1
       with:
