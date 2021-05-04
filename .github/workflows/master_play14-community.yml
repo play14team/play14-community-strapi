@@ -22,15 +22,6 @@ jobs:
       with:
         node-version: '14.x'
 
-    - name: Create .env file
-      uses: SpicyPizza/create-envfile@v1.1
-      with:
-        envkey_JWT_SECRET: ${{ secrets.ENVKEY_JWT_SECRET }}
-        envkey_DATABASE_HOST: ${{ secrets.ENVKEY_DATABASE_HOST }}
-        envkey_DATABASE_NAME: ${{ secrets.ENVKEY_DATABASE_NAME }}
-        envkey_DATABASE_USERNAME: ${{ secrets.ENVKEY_DATABASE_USERNAME }}
-        envkey_DATABASE_PASSWORD: ${{ secrets.ENVKEY_DATABASE_PASSWORD }}
-
     - name: npm install, build, and test
       run: |
         npm install
