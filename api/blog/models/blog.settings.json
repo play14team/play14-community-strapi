@@ -24,10 +24,6 @@
       "type": "richtext",
       "required": true
     },
-    "author": {
-      "type": "string",
-      "required": true
-    },
     "date": {
       "type": "date"
     },
@@ -42,6 +38,10 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "author": {
+      "model": "player",
+      "via": "blogs"
     }
   }
 }

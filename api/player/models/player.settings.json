@@ -59,6 +59,20 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "website": {
+      "type": "string"
+    },
+    "embeddedMapUrl": {
+      "type": "string"
+    },
+    "blogs": {
+      "via": "author",
+      "collection": "blog"
+    },
+    "events": {
+      "via": "players",
+      "collection": "event"
     }
   }
 }

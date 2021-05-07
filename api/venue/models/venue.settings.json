@@ -50,8 +50,8 @@
       "pluginOptions": {}
     },
     "events": {
-      "collection": "event",
-      "via": "venue"
+      "via": "venue",
+      "collection": "event"
     },
     "website": {
       "type": "string"

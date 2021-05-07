@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "histories",
+  "info": {
+    "name": "History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "beginning": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "history.history-time-line"
+    }
+  }
+}

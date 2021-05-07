@@ -647,6 +647,148 @@
           "slug": {
             "type": "uid"
           },
+          "website": {
+            "type": "string"
+          },
+          "embeddedMapUrl": {
+            "type": "string"
+          },
+          "blogs": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "title",
+                "slug",
+                "content",
+                "image"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "image": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "status",
+                "defaultImage"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "string"
+                },
+                "end": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "venue": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "sponsors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Draft",
+                    "Published",
+                    "OpenForRegistration",
+                    "Over",
+                    "Canceled"
+                  ]
+                },
+                "hosts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "mentors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "players": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "defaultImage": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -714,6 +856,24 @@
           },
           "slug": {
             "type": "uid"
+          },
+          "website": {
+            "type": "string"
+          },
+          "embeddedMapUrl": {
+            "type": "string"
+          },
+          "blogs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

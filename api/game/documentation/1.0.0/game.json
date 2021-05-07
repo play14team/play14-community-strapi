@@ -674,6 +674,24 @@
                 "slug": {
                   "type": "uid"
                 },
+                "website": {
+                  "type": "string"
+                },
+                "embeddedMapUrl": {
+                  "type": "string"
+                },
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "events": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -732,6 +750,24 @@
                 "slug": {
                   "type": "uid"
                 },
+                "website": {
+                  "type": "string"
+                },
+                "embeddedMapUrl": {
+                  "type": "string"
+                },
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "events": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -758,8 +794,8 @@
             "required": [
               "id",
               "name",
-              "images",
-              "status"
+              "status",
+              "defaultImage"
             ],
             "properties": {
               "id": {
@@ -810,6 +846,27 @@
                   "Over",
                   "Canceled"
                 ]
+              },
+              "hosts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mentors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "players": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "defaultImage": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

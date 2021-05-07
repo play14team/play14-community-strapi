@@ -520,7 +520,6 @@
           "title",
           "slug",
           "content",
-          "author",
           "image"
         ],
         "properties": {
@@ -534,9 +533,6 @@
             "type": "uid"
           },
           "content": {
-            "type": "string"
-          },
-          "author": {
             "type": "string"
           },
           "date": {
@@ -610,6 +606,79 @@
               }
             }
           },
+          "author": {
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "company": {
+                "type": "string"
+              },
+              "headline": {
+                "type": "string"
+              },
+              "avatar": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "Founder",
+                  "Mentor",
+                  "Host",
+                  "Unicorn",
+                  "Serial",
+                  "Player"
+                ]
+              },
+              "biography": {
+                "type": "string"
+              },
+              "socialNetworks": {
+                "type": "component"
+              },
+              "slug": {
+                "type": "uid"
+              },
+              "website": {
+                "type": "string"
+              },
+              "embeddedMapUrl": {
+                "type": "string"
+              },
+              "blogs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -620,8 +689,7 @@
         "required": [
           "title",
           "slug",
-          "content",
-          "author"
+          "content"
         ],
         "properties": {
           "title": {
@@ -633,12 +701,12 @@
           "content": {
             "type": "string"
           },
-          "author": {
-            "type": "string"
-          },
           "date": {
             "type": "string",
             "format": "date"
+          },
+          "author": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

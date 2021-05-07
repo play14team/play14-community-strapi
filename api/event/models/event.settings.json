@@ -51,7 +51,7 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {}
     },
     "status": {
@@ -65,6 +65,31 @@
       ],
       "default": "Draft",
       "required": true
+    },
+    "hosts": {
+      "collection": "player",
+      "via": "events",
+      "dominant": true
+    },
+    "mentors": {
+      "collection": "player",
+      "via": "events",
+      "dominant": true
+    },
+    "players": {
+      "collection": "player",
+      "via": "events",
+      "dominant": true
+    },
+    "defaultImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }

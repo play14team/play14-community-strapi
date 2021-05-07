@@ -518,8 +518,8 @@
         "required": [
           "id",
           "name",
-          "images",
-          "status"
+          "status",
+          "defaultImage"
         ],
         "properties": {
           "id": {
@@ -746,6 +746,301 @@
               "Canceled"
             ]
           },
+          "hosts": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": "string"
+                },
+                "headline": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "Founder",
+                    "Mentor",
+                    "Host",
+                    "Unicorn",
+                    "Serial",
+                    "Player"
+                  ]
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "socialNetworks": {
+                  "type": "component"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "embeddedMapUrl": {
+                  "type": "string"
+                },
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "events": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "mentors": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": "string"
+                },
+                "headline": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "Founder",
+                    "Mentor",
+                    "Host",
+                    "Unicorn",
+                    "Serial",
+                    "Player"
+                  ]
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "socialNetworks": {
+                  "type": "component"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "embeddedMapUrl": {
+                  "type": "string"
+                },
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "events": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "company": {
+                  "type": "string"
+                },
+                "headline": {
+                  "type": "string"
+                },
+                "avatar": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "Founder",
+                    "Mentor",
+                    "Host",
+                    "Unicorn",
+                    "Serial",
+                    "Player"
+                  ]
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "socialNetworks": {
+                  "type": "component"
+                },
+                "slug": {
+                  "type": "uid"
+                },
+                "website": {
+                  "type": "string"
+                },
+                "embeddedMapUrl": {
+                  "type": "string"
+                },
+                "blogs": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "events": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "defaultImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -800,6 +1095,24 @@
               "Over",
               "Canceled"
             ]
+          },
+          "hosts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "mentors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",
