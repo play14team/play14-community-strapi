@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_youtube_videos",
+  "info": {
+    "name": "YoutubeVideo",
+    "icon": "video"
+  },
+  "options": {},
+  "attributes": {
+    "embeddedVideo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_events_weez_event_registrations",
+  "info": {
+    "name": "WeezEventRegistration",
+    "icon": "money-check-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eventid": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true,
+      "default": "WeezEvent"
+    }
+  }
+}

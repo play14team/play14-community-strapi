@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_events_timetables",
+  "info": {
+    "name": "timetable",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Friday",
+        "Saturday",
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "timeslots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events.time-slots"
+    }
+  }
+}

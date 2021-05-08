@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_registration_registrations",
+  "info": {
+    "name": "Registration",
+    "icon": "info-circle"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "registration.link-registration"
+    },
+    "weezevent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "registration.weez-event-registration"
+    },
+    "eventbrite": {
+      "type": "component",
+      "repeatable": false,
+      "component": "registration.eventbrite-registration"
+    }
+  }
+}

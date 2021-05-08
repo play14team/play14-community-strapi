@@ -775,6 +775,12 @@
                 "defaultImage": {
                   "type": "string"
                 },
+                "contact": {
+                  "type": "string"
+                },
+                "timetable": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_events_link_registrations",
+  "info": {
+    "name": "LinkRegistration",
+    "icon": "unlink",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "default": "Link",
+      "required": true
+    }
+  }
+}

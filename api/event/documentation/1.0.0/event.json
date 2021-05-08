@@ -1038,6 +1038,63 @@
               }
             }
           },
+          "contact": {
+            "type": "string",
+            "default": "team@play14.org"
+          },
+          "timetable": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "day",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string",
+                  "enum": [
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "timeslots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "time",
+                      "description"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1109,6 +1166,63 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "contact": {
+            "type": "string",
+            "default": "team@play14.org"
+          },
+          "timetable": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "day",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string",
+                  "enum": [
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "timeslots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "time",
+                      "description"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "published_at": {

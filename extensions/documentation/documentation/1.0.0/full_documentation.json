@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/08/2021 10:10:35 PM"
+    "x-generation-date": "05/09/2021 1:45:59 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8177,6 +8177,12 @@
                 "defaultImage": {
                   "type": "string"
                 },
+                "contact": {
+                  "type": "string"
+                },
+                "timetable": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -8737,6 +8743,63 @@
               }
             }
           },
+          "contact": {
+            "type": "string",
+            "default": "team@play14.org"
+          },
+          "timetable": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "day",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string",
+                  "enum": [
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "timeslots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "time",
+                      "description"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8808,6 +8871,63 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "contact": {
+            "type": "string",
+            "default": "team@play14.org"
+          },
+          "timetable": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "day",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "day": {
+                  "type": "string",
+                  "enum": [
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "timeslots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "time",
+                      "description"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "time": {
+                        "type": "string"
+                      },
+                      "description": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "published_at": {
@@ -9316,6 +9436,12 @@
               },
               "defaultImage": {
                 "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "timetable": {
+                "type": "component"
               },
               "published_at": {
                 "type": "string"
@@ -10399,6 +10525,12 @@
                 "defaultImage": {
                   "type": "string"
                 },
+                "contact": {
+                  "type": "string"
+                },
+                "timetable": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10698,6 +10830,12 @@
                 },
                 "defaultImage": {
                   "type": "string"
+                },
+                "contact": {
+                  "type": "string"
+                },
+                "timetable": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -11034,6 +11172,12 @@
                 },
                 "defaultImage": {
                   "type": "string"
+                },
+                "contact": {
+                  "type": "string"
+                },
+                "timetable": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_common_markdowns",
+  "info": {
+    "name": "markdown",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext",
+      "default": "### title",
+      "required": true
+    }
+  }
+}
