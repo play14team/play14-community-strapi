@@ -36,8 +36,8 @@
       "model": "venue"
     },
     "location": {
-      "model": "event-location",
-      "via": "events"
+      "via": "events",
+      "model": "event-location"
     },
     "sponsors": {
       "collection": "sponsor",
