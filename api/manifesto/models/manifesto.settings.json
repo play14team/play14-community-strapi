@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "manifesto",
+  "info": {
+    "name": "manifesto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introduction": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.item"
+    }
+  }
+}

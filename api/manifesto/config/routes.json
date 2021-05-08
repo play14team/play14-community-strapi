@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/manifesto",
+      "handler": "manifesto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/manifesto",
+      "handler": "manifesto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/manifesto",
+      "handler": "manifesto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
