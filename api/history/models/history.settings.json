@@ -1,6 +1,6 @@
 {
   "kind": "singleType",
-  "collectionName": "histories",
+  "collectionName": "history",
   "info": {
     "name": "History",
     "description": ""
