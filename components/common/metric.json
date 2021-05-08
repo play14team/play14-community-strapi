@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_metrics",
+  "info": {
+    "name": "Metric",
+    "icon": "chart-bar"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

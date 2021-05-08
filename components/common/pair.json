@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_pairs",
+  "info": {
+    "name": "Value",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

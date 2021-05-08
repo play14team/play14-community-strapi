@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_items",
+  "info": {
+    "name": "item",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
