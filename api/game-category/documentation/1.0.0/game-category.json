@@ -530,7 +530,8 @@
       "Game-category": {
         "required": [
           "id",
-          "name"
+          "name",
+          "icon"
         ],
         "properties": {
           "id": {
@@ -544,7 +545,8 @@
             "items": {
               "required": [
                 "id",
-                "name"
+                "name",
+                "defaultImage"
               ],
               "properties": {
                 "id": {
@@ -592,20 +594,32 @@
                 "summary": {
                   "type": "string"
                 },
-                "values": {
-                  "type": "string"
-                },
-                "materials": {
-                  "type": "string"
-                },
-                "preparations": {
-                  "type": "string"
-                },
                 "description": {
                   "type": "string"
                 },
                 "slug": {
                   "type": "uid"
+                },
+                "defaultImage": {
+                  "type": "string"
+                },
+                "takeaways": {
+                  "type": "component"
+                },
+                "materials": {
+                  "type": "component"
+                },
+                "preparationSteps": {
+                  "type": "component"
+                },
+                "resources": {
+                  "type": "component"
+                },
+                "metrics": {
+                  "type": "component"
+                },
+                "safety": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -619,15 +633,16 @@
               }
             }
           },
-          "published_at": {
+          "icon": {
             "type": "string",
-            "format": "date-time"
+            "default": "flaticon-right-1"
           }
         }
       },
       "NewGame-category": {
         "required": [
-          "name"
+          "name",
+          "icon"
         ],
         "properties": {
           "name": {
@@ -639,9 +654,9 @@
               "type": "string"
             }
           },
-          "published_at": {
+          "icon": {
             "type": "string",
-            "format": "date-time"
+            "default": "flaticon-right-1"
           },
           "created_by": {
             "type": "string"

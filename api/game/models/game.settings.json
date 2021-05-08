@@ -18,8 +18,8 @@
       "unique": true
     },
     "categories": {
-      "collection": "game-category",
       "via": "games",
+      "collection": "game-category",
       "dominant": true
     },
     "images": {
@@ -55,21 +55,52 @@
     "summary": {
       "type": "text"
     },
-    "values": {
-      "type": "richtext"
-    },
-    "materials": {
-      "type": "richtext"
-    },
-    "preparations": {
-      "type": "richtext"
-    },
     "description": {
       "type": "richtext"
     },
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "defaultImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "takeaways": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.item"
+    },
+    "materials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.item"
+    },
+    "preparationSteps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.item"
+    },
+    "resources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.resource"
+    },
+    "safety": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.pair"
+    },
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "game.game-metric"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_game_game_metrics",
+  "info": {
+    "name": "GameMetric",
+    "icon": "thermometer-half",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "Silliness",
+        "Energy",
+        "Connection",
+        "Learning"
+      ],
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "default": 70,
+      "required": true,
+      "max": 100
+    }
+  }
+}

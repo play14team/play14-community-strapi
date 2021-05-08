@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "game_categories",
   "info": {
-    "name": "GameCategory"
+    "name": "GameCategory",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,6 +20,11 @@
     "games": {
       "via": "categories",
       "collection": "game"
+    },
+    "icon": {
+      "type": "string",
+      "required": true,
+      "default": "flaticon-right-1"
     }
   }
 }
