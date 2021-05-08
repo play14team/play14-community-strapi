@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "code-of-conduct",
+  "info": {
+    "name": "Code of Conduct"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introduction": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.item"
+    },
+    "conclusion": {
+      "type": "string"
+    }
+  }
+}
