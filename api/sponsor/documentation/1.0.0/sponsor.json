@@ -713,6 +713,9 @@
                 "registration": {
                   "type": "component"
                 },
+                "content": {
+                  "type": "dynamiczone"
+                },
                 "published_at": {
                   "type": "string"
                 },

@@ -1,8 +1,9 @@
 {
   "collectionName": "components_common_markdowns",
   "info": {
-    "name": "markdown",
-    "icon": "align-left"
+    "name": "Markdown",
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {

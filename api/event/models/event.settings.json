@@ -105,6 +105,14 @@
       "type": "component",
       "repeatable": false,
       "component": "registration.registration"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "common.media",
+        "common.youtube-video",
+        "common.markdown"
+      ]
     }
   }
 }
