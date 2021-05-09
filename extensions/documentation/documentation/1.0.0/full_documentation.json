@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/09/2021 1:45:59 AM"
+    "x-generation-date": "05/09/2021 1:57:17 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8183,6 +8183,9 @@
                 "timetable": {
                   "type": "component"
                 },
+                "registration": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -8800,6 +8803,66 @@
               }
             }
           },
+          "registration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "link": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              },
+              "weezevent": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid",
+                  "code"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
+                  },
+                  "code": {
+                    "type": "string"
+                  }
+                }
+              },
+              "eventbrite": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8925,6 +8988,66 @@
                         "type": "string"
                       }
                     }
+                  }
+                }
+              }
+            }
+          },
+          "registration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "link": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              },
+              "weezevent": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid",
+                  "code"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
+                  },
+                  "code": {
+                    "type": "string"
+                  }
+                }
+              },
+              "eventbrite": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
                   }
                 }
               }
@@ -9441,6 +9564,9 @@
                 "type": "string"
               },
               "timetable": {
+                "type": "component"
+              },
+              "registration": {
                 "type": "component"
               },
               "published_at": {
@@ -10531,6 +10657,9 @@
                 "timetable": {
                   "type": "component"
                 },
+                "registration": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10835,6 +10964,9 @@
                   "type": "string"
                 },
                 "timetable": {
+                  "type": "component"
+                },
+                "registration": {
                   "type": "component"
                 },
                 "published_at": {
@@ -11177,6 +11309,9 @@
                   "type": "string"
                 },
                 "timetable": {
+                  "type": "component"
+                },
+                "registration": {
                   "type": "component"
                 },
                 "published_at": {

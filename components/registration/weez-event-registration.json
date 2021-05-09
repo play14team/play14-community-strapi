@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_events_weez_event_registrations",
+  "collectionName": "components_registration_weez_event_registrations",
   "info": {
     "name": "WeezEventRegistration",
     "icon": "money-check-alt",
@@ -14,11 +14,6 @@
     "code": {
       "type": "string",
       "required": true
-    },
-    "type": {
-      "type": "string",
-      "required": true,
-      "default": "WeezEvent"
     }
   }
 }

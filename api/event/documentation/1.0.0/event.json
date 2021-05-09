@@ -1095,6 +1095,66 @@
               }
             }
           },
+          "registration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "link": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              },
+              "weezevent": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid",
+                  "code"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
+                  },
+                  "code": {
+                    "type": "string"
+                  }
+                }
+              },
+              "eventbrite": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1220,6 +1280,66 @@
                         "type": "string"
                       }
                     }
+                  }
+                }
+              }
+            }
+          },
+          "registration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "link": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "url"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              },
+              "weezevent": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid",
+                  "code"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
+                  },
+                  "code": {
+                    "type": "string"
+                  }
+                }
+              },
+              "eventbrite": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "eventid"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "eventid": {
+                    "type": "string"
                   }
                 }
               }

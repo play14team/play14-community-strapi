@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_events_eventbrite_registrations",
+  "collectionName": "components_registration_eventbrite_registrations",
   "info": {
     "name": "EventbriteRegistration",
     "icon": "registered",
@@ -9,11 +9,6 @@
   "attributes": {
     "eventid": {
       "type": "string",
-      "required": true
-    },
-    "type": {
-      "type": "string",
-      "default": "Eventbrite",
       "required": true
     }
   }

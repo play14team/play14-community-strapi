@@ -100,6 +100,11 @@
       "type": "component",
       "repeatable": true,
       "component": "events.timetable"
+    },
+    "registration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "registration.registration"
     }
   }
 }
