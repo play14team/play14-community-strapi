@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/09/2021 2:02:24 AM"
+    "x-generation-date": "05/09/2021 2:15:00 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8151,7 +8151,7 @@
                   "enum": [
                     "Draft",
                     "Published",
-                    "OpenForRegistration",
+                    "Open",
                     "Over",
                     "Canceled"
                   ]
@@ -8449,7 +8449,7 @@
             "enum": [
               "Draft",
               "Published",
-              "OpenForRegistration",
+              "Open",
               "Over",
               "Canceled"
             ]
@@ -9057,7 +9057,7 @@
             "enum": [
               "Draft",
               "Published",
-              "OpenForRegistration",
+              "Open",
               "Over",
               "Canceled"
             ]
@@ -9819,7 +9819,7 @@
                 "enum": [
                   "Draft",
                   "Published",
-                  "OpenForRegistration",
+                  "Open",
                   "Over",
                   "Canceled"
                 ]
@@ -10913,7 +10913,7 @@
                   "enum": [
                     "Draft",
                     "Published",
-                    "OpenForRegistration",
+                    "Open",
                     "Over",
                     "Canceled"
                   ]
@@ -11225,7 +11225,7 @@
                   "enum": [
                     "Draft",
                     "Published",
-                    "OpenForRegistration",
+                    "Open",
                     "Over",
                     "Canceled"
                   ]
@@ -11573,7 +11573,7 @@
                   "enum": [
                     "Draft",
                     "Published",
-                    "OpenForRegistration",
+                    "Open",
                     "Over",
                     "Canceled"
                   ]

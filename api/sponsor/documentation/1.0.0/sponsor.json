@@ -678,7 +678,7 @@
                   "enum": [
                     "Draft",
                     "Published",
-                    "OpenForRegistration",
+                    "Open",
                     "Over",
                     "Canceled"
                   ]

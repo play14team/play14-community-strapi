@@ -738,7 +738,7 @@
             "enum": [
               "Draft",
               "Published",
-              "OpenForRegistration",
+              "Open",
               "Over",
               "Canceled"
             ]
@@ -1346,7 +1346,7 @@
             "enum": [
               "Draft",
               "Published",
-              "OpenForRegistration",
+              "Open",
               "Over",
               "Canceled"
             ]
