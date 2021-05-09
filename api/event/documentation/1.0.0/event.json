@@ -531,9 +531,6 @@
           "slug": {
             "type": "string"
           },
-          "date": {
-            "type": "string"
-          },
           "start": {
             "type": "string",
             "format": "date-time"
@@ -1312,9 +1309,6 @@
             "type": "string"
           },
           "slug": {
-            "type": "string"
-          },
-          "date": {
             "type": "string"
           },
           "start": {

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/09/2021 2:35:21 AM"
+    "x-generation-date": "05/09/2021 3:47:44 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8116,9 +8116,6 @@
                 "slug": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string"
-                },
                 "start": {
                   "type": "string"
                 },
@@ -8240,9 +8237,6 @@
             "type": "string"
           },
           "slug": {
-            "type": "string"
-          },
-          "date": {
             "type": "string"
           },
           "start": {
@@ -9025,9 +9019,6 @@
           "slug": {
             "type": "string"
           },
-          "date": {
-            "type": "string"
-          },
           "start": {
             "type": "string",
             "format": "date-time"
@@ -9782,9 +9773,6 @@
                 "type": "string"
               },
               "slug": {
-                "type": "string"
-              },
-              "date": {
                 "type": "string"
               },
               "start": {
@@ -10878,9 +10866,6 @@
                 "slug": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string"
-                },
                 "start": {
                   "type": "string"
                 },
@@ -11188,9 +11173,6 @@
                   "type": "string"
                 },
                 "slug": {
-                  "type": "string"
-                },
-                "date": {
                   "type": "string"
                 },
                 "start": {
@@ -11536,9 +11518,6 @@
                   "type": "string"
                 },
                 "slug": {
-                  "type": "string"
-                },
-                "date": {
                   "type": "string"
                 },
                 "start": {

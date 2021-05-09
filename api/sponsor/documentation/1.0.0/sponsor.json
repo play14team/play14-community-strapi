@@ -643,9 +643,6 @@
                 "slug": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string"
-                },
                 "start": {
                   "type": "string"
                 },
