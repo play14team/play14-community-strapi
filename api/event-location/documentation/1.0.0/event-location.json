@@ -592,7 +592,7 @@
                   "type": "string",
                   "enum": [
                     "Draft",
-                    "Published",
+                    "Announced",
                     "Open",
                     "Over",
                     "Canceled"

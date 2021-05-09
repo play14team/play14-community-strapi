@@ -737,7 +737,7 @@
             "default": "Draft",
             "enum": [
               "Draft",
-              "Published",
+              "Announced",
               "Open",
               "Over",
               "Canceled"
@@ -1345,7 +1345,7 @@
             "default": "Draft",
             "enum": [
               "Draft",
-              "Published",
+              "Announced",
               "Open",
               "Over",
               "Canceled"

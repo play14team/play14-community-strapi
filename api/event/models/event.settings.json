@@ -58,7 +58,7 @@
       "type": "enumeration",
       "enum": [
         "Draft",
-        "Published",
+        "Announced",
         "Open",
         "Over",
         "Canceled"

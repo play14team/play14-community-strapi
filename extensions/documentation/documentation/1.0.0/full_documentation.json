@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/09/2021 2:15:00 AM"
+    "x-generation-date": "05/09/2021 2:35:21 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8150,7 +8150,7 @@
                   "type": "string",
                   "enum": [
                     "Draft",
-                    "Published",
+                    "Announced",
                     "Open",
                     "Over",
                     "Canceled"
@@ -8448,7 +8448,7 @@
             "default": "Draft",
             "enum": [
               "Draft",
-              "Published",
+              "Announced",
               "Open",
               "Over",
               "Canceled"
@@ -9056,7 +9056,7 @@
             "default": "Draft",
             "enum": [
               "Draft",
-              "Published",
+              "Announced",
               "Open",
               "Over",
               "Canceled"
@@ -9818,7 +9818,7 @@
                 "type": "string",
                 "enum": [
                   "Draft",
-                  "Published",
+                  "Announced",
                   "Open",
                   "Over",
                   "Canceled"
@@ -10912,7 +10912,7 @@
                   "type": "string",
                   "enum": [
                     "Draft",
-                    "Published",
+                    "Announced",
                     "Open",
                     "Over",
                     "Canceled"
@@ -11224,7 +11224,7 @@
                   "type": "string",
                   "enum": [
                     "Draft",
-                    "Published",
+                    "Announced",
                     "Open",
                     "Over",
                     "Canceled"
@@ -11572,7 +11572,7 @@
                   "type": "string",
                   "enum": [
                     "Draft",
-                    "Published",
+                    "Announced",
                     "Open",
                     "Over",
                     "Canceled"
