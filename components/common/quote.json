@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_quotes",
+  "info": {
+    "name": "Quote",
+    "icon": "quote-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

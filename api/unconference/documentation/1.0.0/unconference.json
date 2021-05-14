@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/history": {
+    "/unconference": {
       "get": {
         "deprecated": false,
-        "description": "Find all the history's records",
+        "description": "Find all the unconference's records",
         "responses": {
           "200": {
-            "description": "Retrieve history document(s)",
+            "description": "Retrieve unconference document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/History"
+                    "$ref": "#/components/schemas/Unconference"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "History"
+          "Unconference"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single history record",
+        "description": "Update a single unconference record",
         "responses": {
           "200": {
-            "description": "Retrieve history document(s)",
+            "description": "Retrieve unconference document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/History"
+                  "$ref": "#/components/schemas/Unconference"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "History"
+          "Unconference"
         ],
         "requestBody": {
           "description": "",
@@ -247,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHistory"
+                "$ref": "#/components/schemas/NewUnconference"
               }
             }
           }
@@ -256,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single history record",
+        "description": "Delete a single unconference record",
         "responses": {
           "200": {
-            "description": "deletes a single history based on the ID supplied",
+            "description": "deletes a single unconference based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -302,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "History"
+          "Unconference"
         ],
         "parameters": []
       }
@@ -310,7 +310,7 @@
   },
   "components": {
     "schemas": {
-      "History": {
+      "Unconference": {
         "required": [
           "id"
         ],
@@ -318,28 +318,22 @@
           "id": {
             "type": "string"
           },
-          "beginning": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
-          "timeline": {
+          "principles": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "text"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string",
-                  "format": "date"
-                },
-                "title": {
+                "text": {
                   "type": "string"
                 },
                 "description": {
@@ -415,39 +409,236 @@
               }
             }
           },
-          "acknowledgement": {
+          "lawoftwofeet": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "lawoftwofeetimage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "bumblebee": {
+            "type": "string"
+          },
+          "bumblebeeimage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "buttefly": {
+            "type": "string"
+          },
+          "butteflyimage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
-      "NewHistory": {
+      "NewUnconference": {
         "properties": {
-          "beginning": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
-          "timeline": {
+          "principles": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "text"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string",
-                  "format": "date"
-                },
-                "title": {
+                "text": {
                   "type": "string"
                 },
                 "description": {
@@ -523,12 +714,14 @@
               }
             }
           },
-          "acknowledgement": {
+          "lawoftwofeet": {
             "type": "string"
           },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
+          "bumblebee": {
+            "type": "string"
+          },
+          "buttefly": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -542,7 +735,7 @@
   },
   "tags": [
     {
-      "name": "History"
+      "name": "Unconference"
     }
   ]
 }

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/unconference",
+      "handler": "unconference.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/unconference",
+      "handler": "unconference.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/unconference",
+      "handler": "unconference.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

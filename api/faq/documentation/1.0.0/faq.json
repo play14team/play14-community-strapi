@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/history": {
+    "/faq": {
       "get": {
         "deprecated": false,
-        "description": "Find all the history's records",
+        "description": "Find all the faq's records",
         "responses": {
           "200": {
-            "description": "Retrieve history document(s)",
+            "description": "Retrieve faq document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/History"
+                    "$ref": "#/components/schemas/Faq"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "History"
+          "Faq"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single history record",
+        "description": "Update a single faq record",
         "responses": {
           "200": {
-            "description": "Retrieve history document(s)",
+            "description": "Retrieve faq document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/History"
+                  "$ref": "#/components/schemas/Faq"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "History"
+          "Faq"
         ],
         "requestBody": {
           "description": "",
@@ -247,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewHistory"
+                "$ref": "#/components/schemas/NewFaq"
               }
             }
           }
@@ -256,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single history record",
+        "description": "Delete a single faq record",
         "responses": {
           "200": {
-            "description": "deletes a single history based on the ID supplied",
+            "description": "deletes a single faq based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -302,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "History"
+          "Faq"
         ],
         "parameters": []
       }
@@ -310,7 +310,7 @@
   },
   "components": {
     "schemas": {
-      "History": {
+      "Faq": {
         "required": [
           "id"
         ],
@@ -318,105 +318,27 @@
           "id": {
             "type": "string"
           },
-          "beginning": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "timeline": {
+          "question": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "text",
+                "answer"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string",
-                  "format": "date"
-                },
-                "title": {
+                "text": {
                   "type": "string"
                 },
-                "description": {
+                "answer": {
                   "type": "string"
-                },
-                "image": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
                 }
               }
             }
-          },
-          "acknowledgement": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -424,107 +346,29 @@
           }
         }
       },
-      "NewHistory": {
+      "NewFaq": {
         "properties": {
-          "beginning": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "timeline": {
+          "question": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id"
+                "id",
+                "text",
+                "answer"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "date": {
-                  "type": "string",
-                  "format": "date"
-                },
-                "title": {
+                "text": {
                   "type": "string"
                 },
-                "description": {
+                "answer": {
                   "type": "string"
-                },
-                "image": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
                 }
               }
             }
-          },
-          "acknowledgement": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -542,7 +386,7 @@
   },
   "tags": [
     {
-      "name": "History"
+      "name": "Faq"
     }
   ]
 }

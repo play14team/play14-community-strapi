@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "content": {
+    "markdown": {
       "type": "richtext",
       "default": "### title",
       "required": true

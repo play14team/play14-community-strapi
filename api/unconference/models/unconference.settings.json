@@ -1,0 +1,69 @@
+{
+  "kind": "singleType",
+  "collectionName": "unconference",
+  "info": {
+    "name": "unconference",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "principles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "unconference.principles"
+    },
+    "lawoftwofeet": {
+      "type": "richtext"
+    },
+    "lawoftwofeetimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bumblebee": {
+      "type": "richtext"
+    },
+    "bumblebeeimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "buttefly": {
+      "type": "richtext"
+    },
+    "butteflyimage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

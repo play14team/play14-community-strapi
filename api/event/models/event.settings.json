@@ -25,9 +25,6 @@
     "end": {
       "type": "datetime"
     },
-    "description": {
-      "type": "richtext"
-    },
     "venue": {
       "via": "events",
       "model": "venue"
@@ -108,7 +105,9 @@
       "components": [
         "common.media",
         "common.youtube-video",
-        "common.markdown"
+        "common.markdown",
+        "common.quote",
+        "common.slider"
       ]
     }
   }

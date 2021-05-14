@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "faq",
+  "info": {
+    "name": "FAQ",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "component",
+      "repeatable": true,
+      "component": "unconference.question"
+    }
+  }
+}

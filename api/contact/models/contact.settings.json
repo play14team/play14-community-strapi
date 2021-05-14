@@ -34,10 +34,10 @@
     "description": {
       "type": "richtext"
     },
-    "registerTonNewsletter": {
+    "newsletter": {
       "type": "string"
     },
-    "joinSlack": {
+    "slack": {
       "type": "string"
     },
     "shortDescription": {

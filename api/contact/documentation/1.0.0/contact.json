@@ -387,10 +387,10 @@
           "description": {
             "type": "string"
           },
-          "registerTonNewsletter": {
+          "newsletter": {
             "type": "string"
           },
-          "joinSlack": {
+          "slack": {
             "type": "string"
           },
           "shortDescription": {
@@ -473,10 +473,10 @@
           "description": {
             "type": "string"
           },
-          "registerTonNewsletter": {
+          "newsletter": {
             "type": "string"
           },
-          "joinSlack": {
+          "slack": {
             "type": "string"
           },
           "shortDescription": {

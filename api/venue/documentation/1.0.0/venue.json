@@ -720,9 +720,6 @@
                 "end": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "venue": {
                   "type": "string"
                 },
