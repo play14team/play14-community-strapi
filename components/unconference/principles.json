@@ -2,7 +2,8 @@
   "collectionName": "components_unconference_principles",
   "info": {
     "name": "Principles",
-    "icon": "archway"
+    "icon": "archway",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -13,17 +14,9 @@
     "description": {
       "type": "text"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+    "icon": {
+      "type": "string",
+      "required": true
     }
   }
 }

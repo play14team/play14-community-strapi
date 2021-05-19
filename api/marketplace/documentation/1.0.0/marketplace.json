@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/faq": {
+    "/marketplace": {
       "get": {
         "deprecated": false,
-        "description": "Find all the faq's records",
+        "description": "Find all the marketplace's records",
         "responses": {
           "200": {
-            "description": "Retrieve faq document(s)",
+            "description": "Retrieve marketplace document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Faq"
+                    "$ref": "#/components/schemas/Marketplace"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Faq"
+          "Marketplace"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single faq record",
+        "description": "Update a single marketplace record",
         "responses": {
           "200": {
-            "description": "Retrieve faq document(s)",
+            "description": "Retrieve marketplace document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Faq"
+                  "$ref": "#/components/schemas/Marketplace"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Faq"
+          "Marketplace"
         ],
         "requestBody": {
           "description": "",
@@ -247,7 +247,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewFaq"
+                "$ref": "#/components/schemas/NewMarketplace"
               }
             }
           }
@@ -256,10 +256,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single faq record",
+        "description": "Delete a single marketplace record",
         "responses": {
           "200": {
-            "description": "deletes a single faq based on the ID supplied",
+            "description": "deletes a single marketplace based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -302,7 +302,7 @@
         },
         "summary": "",
         "tags": [
-          "Faq"
+          "Marketplace"
         ],
         "parameters": []
       }
@@ -310,7 +310,7 @@
   },
   "components": {
     "schemas": {
-      "Faq": {
+      "Marketplace": {
         "required": [
           "id"
         ],
@@ -318,23 +318,27 @@
           "id": {
             "type": "string"
           },
-          "questions": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "marketplacesteps": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id",
-                "text",
-                "answer"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "text": {
+                "title": {
                   "type": "string"
                 },
-                "answer": {
+                "description": {
                   "type": "string"
                 }
               }
@@ -342,25 +346,29 @@
           }
         }
       },
-      "NewFaq": {
+      "NewMarketplace": {
         "properties": {
-          "questions": {
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "marketplacesteps": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
-                "id",
-                "text",
-                "answer"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "text": {
+                "title": {
                   "type": "string"
                 },
-                "answer": {
+                "description": {
                   "type": "string"
                 }
               }
@@ -378,7 +386,7 @@
   },
   "tags": [
     {
-      "name": "Faq"
+      "name": "Marketplace"
     }
   ]
 }

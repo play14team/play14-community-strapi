@@ -2,12 +2,13 @@
   "kind": "singleType",
   "collectionName": "code-of-conduct",
   "info": {
-    "name": "Code of Conduct"
+    "name": "Code of Conduct",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

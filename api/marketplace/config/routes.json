@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/marketplace",
+      "handler": "marketplace.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/marketplace",
+      "handler": "marketplace.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/marketplace",
+      "handler": "marketplace.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

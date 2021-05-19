@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "faq",
+  "collectionName": "marketplace",
   "info": {
-    "name": "FAQ",
+    "name": "Marketplace",
     "description": ""
   },
   "options": {
@@ -12,10 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "questions": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "marketplacesteps": {
       "type": "component",
       "repeatable": true,
-      "component": "unconference.question"
+      "component": "unconference.marketplace-step"
     }
   }
 }

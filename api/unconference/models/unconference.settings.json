@@ -50,10 +50,10 @@
       "required": false,
       "pluginOptions": {}
     },
-    "buttefly": {
+    "butterfly": {
       "type": "richtext"
     },
-    "butteflyimage": {
+    "butterflyimage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_unconference_marketplace_steps",
+  "info": {
+    "name": "MarketplaceStep",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
