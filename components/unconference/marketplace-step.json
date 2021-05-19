@@ -12,6 +12,16 @@
     },
     "description": {
       "type": "text"
+    },
+    "sketch": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
